@@ -22,9 +22,7 @@ func mySort(instanceList: Slice<Int>) -> Slice<Int> {
         }
         
         if (l < r) {
-            let tmp = list[l]
-            list[l] = list[r]
-            list[r] = tmp
+            list = Slice<Int>(swap([Int](list), l, r))
         } else if (l == r) {
             l++
             r--
@@ -45,12 +43,19 @@ func bubble(instanceList: [Int]) -> [Int] {
     for var i = 0; i < list.count; i++ {
         for var j = i + 1; j < list.count; j++ {
             if (list[i] > list[j]) {
-                let tmp = list[j]
-                list[j] = list[i]
-                list[i] = tmp
+                list = swap(list, i, j)
             }
         }
     }
+    return list
+}
+
+
+func swap(instanceList: [Int], i: Int, j: Int) -> [Int] {
+    var list = instanceList
+    let tmp = list[j]
+    list[j] = list[i]
+    list[i] = tmp
     return list
 }
 
