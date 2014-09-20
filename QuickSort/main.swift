@@ -50,6 +50,18 @@ func bubble(instanceList: [Int]) -> [Int] {
     return list
 }
 
+func insert(instanceList: [Int]) -> [Int] {
+    var list = instanceList
+    for var i = 1; i < list.count; i++ {
+        var currentElement = list[i]
+        var prev = i - 1
+        while prev >= 0 && currentElement < list[prev] {
+            list = swap(list, prev + 1, prev)
+            prev--
+        }
+    }
+    return list
+}
 
 func swap(instanceList: [Int], i: Int, j: Int) -> [Int] {
     var list = instanceList
@@ -63,8 +75,10 @@ var list = [9, 7, 56, 5, 45, 456, 34, 1, 0, 10]
 println(list)
 println(mySort(Slice<Int>(list)))
 println(bubble(list))
+println(insert(list))
 
 list = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 println(list)
 println(mySort(Slice<Int>(list)))
 println(bubble(list))
+println(insert(list))
