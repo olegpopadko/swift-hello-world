@@ -8,8 +8,9 @@
 
 import Foundation
 
-func mySort(instanceList: [Int], i: Int, j: Int) -> [Int] {
-    var l = i, r = j
+func mySort(instanceList: Slice<Int>) -> Slice<Int> {
+    var i = 0, l = 0, r = instanceList.count - 1
+    var j = r
     var list = instanceList
     var m = list[j]
     do {
@@ -31,15 +32,20 @@ func mySort(instanceList: [Int], i: Int, j: Int) -> [Int] {
     } while l <= r
     
     if (r > i) {
-        list = mySort(list, i, r)
+        list[i...r] = mySort(list[i...r])
     }
     if (l < j) {
-        list = mySort(list, l, j)
+        list[l...j] = mySort(list[l...j])
     }
     return list
 }
 
 var list = [9, 7, 56, 5, 45, 456, 34, 1, 0, 10]
-
 println(list)
-println(mySort(list, 0, list.count - 1))
+var index = list.count - 1
+println(mySort(Slice<Int>(list)))
+
+list = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+println(list)
+index = list.count - 1
+println(mySort(Slice<Int>(list)))
