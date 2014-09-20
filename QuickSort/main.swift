@@ -25,7 +25,7 @@ func mySort(instanceList: Slice<Int>) -> Slice<Int> {
             let tmp = list[l]
             list[l] = list[r]
             list[r] = tmp
-        } else if (l <= r) {
+        } else if (l == r) {
             l++
             r--
         }
@@ -40,12 +40,26 @@ func mySort(instanceList: Slice<Int>) -> Slice<Int> {
     return list
 }
 
+func bubble(instanceList: [Int]) -> [Int] {
+    var list = instanceList
+    for var i = 0; i < list.count; i++ {
+        for var j = i + 1; j < list.count; j++ {
+            if (list[i] > list[j]) {
+                let tmp = list[j]
+                list[j] = list[i]
+                list[i] = tmp
+            }
+        }
+    }
+    return list
+}
+
 var list = [9, 7, 56, 5, 45, 456, 34, 1, 0, 10]
 println(list)
-var index = list.count - 1
 println(mySort(Slice<Int>(list)))
+println(bubble(list))
 
 list = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 println(list)
-index = list.count - 1
 println(mySort(Slice<Int>(list)))
+println(bubble(list))
