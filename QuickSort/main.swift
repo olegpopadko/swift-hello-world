@@ -1,6 +1,6 @@
 //
 //  main.swift
-//  QuickSort
+//  Algorithms
 //
 //  Created by Oleg Popadko on 9/20/14.
 //  Copyright (c) 2014 Oleg Popadko. All rights reserved.

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7C6112FA19CDE69F0033F623"
-               BuildableName = "QuickSort"
-               BlueprintName = "QuickSort"
-               ReferencedContainer = "container:QuickSort.xcodeproj">
+               BuildableName = "Algorithms"
+               BlueprintName = "Algorithms"
+               ReferencedContainer = "container:Algorithms.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7C6112FA19CDE69F0033F623"
-            BuildableName = "QuickSort"
-            BlueprintName = "QuickSort"
-            ReferencedContainer = "container:QuickSort.xcodeproj">
+            BuildableName = "Algorithms"
+            BlueprintName = "Algorithms"
+            ReferencedContainer = "container:Algorithms.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7C6112FA19CDE69F0033F623"
-            BuildableName = "QuickSort"
-            BlueprintName = "QuickSort"
-            ReferencedContainer = "container:QuickSort.xcodeproj">
+            BuildableName = "Algorithms"
+            BlueprintName = "Algorithms"
+            ReferencedContainer = "container:Algorithms.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7C6112FA19CDE69F0033F623"
-            BuildableName = "QuickSort"
-            BlueprintName = "QuickSort"
-            ReferencedContainer = "container:QuickSort.xcodeproj">
+            BuildableName = "Algorithms"
+            BlueprintName = "Algorithms"
+            ReferencedContainer = "container:Algorithms.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

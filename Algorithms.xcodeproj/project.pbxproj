@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7C6112FB19CDE69F0033F623 /* QuickSort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = QuickSort; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C6112FB19CDE69F0033F623 /* Algorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6112FE19CDE69F0033F623 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,7 +41,7 @@
 		7C6112F219CDE69F0033F623 = {
 			isa = PBXGroup;
 			children = (
-				7C6112FD19CDE69F0033F623 /* QuickSort */,
+				7C6112FD19CDE69F0033F623 /* Algorithms */,
 				7C6112FC19CDE69F0033F623 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +49,26 @@
 		7C6112FC19CDE69F0033F623 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7C6112FB19CDE69F0033F623 /* QuickSort */,
+				7C6112FB19CDE69F0033F623 /* Algorithms */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7C6112FD19CDE69F0033F623 /* QuickSort */ = {
+		7C6112FD19CDE69F0033F623 /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
 				7C6112FE19CDE69F0033F623 /* main.swift */,
 			);
+			name = Algorithms;
 			path = QuickSort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7C6112FA19CDE69F0033F623 /* QuickSort */ = {
+		7C6112FA19CDE69F0033F623 /* Algorithms */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7C61130219CDE69F0033F623 /* Build configuration list for PBXNativeTarget "QuickSort" */;
+			buildConfigurationList = 7C61130219CDE69F0033F623 /* Build configuration list for PBXNativeTarget "Algorithms" */;
 			buildPhases = (
 				7C6112F719CDE69F0033F623 /* Sources */,
 				7C6112F819CDE69F0033F623 /* Frameworks */,
@@ -77,9 +78,9 @@
 			);
 			dependencies = (
 			);
-			name = QuickSort;
+			name = Algorithms;
 			productName = QuickSort;
-			productReference = 7C6112FB19CDE69F0033F623 /* QuickSort */;
+			productReference = 7C6112FB19CDE69F0033F623 /* Algorithms */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -96,7 +97,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7C6112F619CDE69F0033F623 /* Build configuration list for PBXProject "QuickSort" */;
+			buildConfigurationList = 7C6112F619CDE69F0033F623 /* Build configuration list for PBXProject "Algorithms" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -108,7 +109,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7C6112FA19CDE69F0033F623 /* QuickSort */,
+				7C6112FA19CDE69F0033F623 /* Algorithms */,
 			);
 		};
 /* End PBXProject section */
@@ -203,21 +204,21 @@
 		7C61130319CDE69F0033F623 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Algorithms;
 			};
 			name = Debug;
 		};
 		7C61130419CDE69F0033F623 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Algorithms;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7C6112F619CDE69F0033F623 /* Build configuration list for PBXProject "QuickSort" */ = {
+		7C6112F619CDE69F0033F623 /* Build configuration list for PBXProject "Algorithms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7C61130019CDE69F0033F623 /* Debug */,
@@ -226,13 +227,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7C61130219CDE69F0033F623 /* Build configuration list for PBXNativeTarget "QuickSort" */ = {
+		7C61130219CDE69F0033F623 /* Build configuration list for PBXNativeTarget "Algorithms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7C61130319CDE69F0033F623 /* Debug */,
 				7C61130419CDE69F0033F623 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
