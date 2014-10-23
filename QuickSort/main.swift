@@ -8,7 +8,7 @@
 
 import Foundation
 
-func mySort(instanceList: Slice<Int>) -> Slice<Int> {
+func quickSort(instanceList: Slice<Int>) -> Slice<Int> {
     var i = 0, l = 0, r = instanceList.count - 1
     var j = r
     var list = instanceList
@@ -30,10 +30,10 @@ func mySort(instanceList: Slice<Int>) -> Slice<Int> {
     } while l <= r
     
     if (r > i) {
-        list[i...r] = mySort(list[i...r])
+        list[i...r] = quickSort(list[i...r])
     }
     if (l < j) {
-        list[l...j] = mySort(list[l...j])
+        list[l...j] = quickSort(list[l...j])
     }
     return list
 }
@@ -73,12 +73,12 @@ func swap(instanceList: [Int], i: Int, j: Int) -> [Int] {
 
 var list = [9, 7, 56, 5, 45, 456, 34, 1, 0, 10]
 println(list)
-println(mySort(Slice<Int>(list)))
+println(quickSort(Slice<Int>(list)))
 println(bubble(list))
 println(insert(list))
 
 list = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 println(list)
-println(mySort(Slice<Int>(list)))
+println(quickSort(Slice<Int>(list)))
 println(bubble(list))
 println(insert(list))
